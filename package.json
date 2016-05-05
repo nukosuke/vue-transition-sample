@@ -1,0 +1,25 @@
+{
+  "name": "vue-transition-sample",
+  "version": "1.0.0",
+  "description": "vue.js transition sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nukosuke/vue-transition-sample.git"
+  },
+  "keywords": [
+    "vuejs",
+    "transition",
+    "animation",
+    "sample"
+  ],
+  "author": "nukosuke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nukosuke/vue-transition-sample/issues"
+  },
+  "homepage": "https://github.com/nukosuke/vue-transition-sample#readme"
+}
