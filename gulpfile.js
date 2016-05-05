@@ -29,5 +29,5 @@ gulp.task('jade', function() {
 
 gulp.task('publish', ['build', 'assets', 'jade'], function() {
   gulp.src(['build/**/*'])
-  pipe(github());
+  .pipe(github());
 });
