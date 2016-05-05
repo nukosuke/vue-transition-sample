@@ -11,4 +11,5 @@ $ npm install
 $ gulp run
 ```
 
-http://localhost:3000 にアクセスするとサンプルが見れます。
+http://localhost:3000 にアクセスするとサンプルが見れます。  
+あるいは[こちら](http://nukosuke.github.io/vue-transition-sample)でも見れます。
