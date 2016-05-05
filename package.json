@@ -32,6 +32,7 @@
   "devDependencies": {
     "css-loader": "^0.23.1",
     "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
     "gulp-shell": "^0.5.2",
     "gulp-webpack": "^1.5.0",
     "node-sass": "^3.7.0",
