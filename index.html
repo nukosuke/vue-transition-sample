@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>vue transition sample</title>
+  </head>
+  <body>
+    <div id="root">
+      <tab></tab>
+      <hr>
+      <router-view></router-view>
+    </div>
+    <script id="tab" type="x-template">
+      <ul class="tab">
+        <li><a v-link="{ path: '/home' }" title="ホーム">ホーム</a></li>
+        <li><a v-link="{ path: '/page-1' }" title="ページ１">ページ１            </a></li>
+        <li><a v-link="{ path: '/page-2' }" title="ページ２">ページ２</a></li>
+      </ul>
+    </script>
+    <script id="home" type="x-template">
+      <div transition="page" class="page">
+        <h1>vue transition sample</h1>
+        <p>this vue.jsとanimate.cssを用いたトランジションのサンプルページです。<br>vue, vue-router, animate.cssから切り出したスタイルを利用しています。<br>上のリンクをクリックするとトランジションが発生します。<br><br>&raquo;&nbsp;<a href="https://github.com/nukosuke/vue-transition-sample" title="コード置き場">コード置き場</a></p>
+      </div>
+    </script>
+    <script id="page-1" type="x-template">
+      <div transition="page" class="page">
+        <h1>ページ１</h1><img src="img/page-1.gif" alt="page-1">
+      </div>
+    </script>
+    <script id="page-2" type="x-template">
+      <div transition="page" class="page">
+        <h1>ページ２</h1><img src="img/page-2.gif" alt="page-2">
+      </div>
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
