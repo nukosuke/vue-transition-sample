@@ -1,6 +1,8 @@
 var gulp    = require('gulp');
 var webpack = require('gulp-webpack');
 var shell   = require('gulp-shell');
+var jade    = require('gulp-jade');
+var github  = require('gulp-gh-pages');
 
 gulp.task('default', ['build', 'assets']);
 
@@ -16,3 +18,16 @@ gulp.task('assets', function() {
 });
 
 gulp.task('run', ['default'], shell.task('npm start'));
+
+
+/* for github pages */
+gulp.task('jade', function() {
+  gulp.src(['index.jade'])
+  .pipe(jade({ pretty: true }))
+  .pipe(gulp.dest('build'));
+});
+
+gulp.task('publish', ['build', 'assets', 'jade'], function() {
+  gulp.src(['build/**/*'])
+  pipe(github());
+});
