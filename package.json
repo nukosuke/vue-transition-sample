@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/nukosuke/vue-transition-sample/issues"
   },
-  "homepage": "https://github.com/nukosuke/vue-transition-sample#readme"
+  "homepage": "https://github.com/nukosuke/vue-transition-sample#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "vue": "^1.0.21"
+  }
 }
